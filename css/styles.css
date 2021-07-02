@@ -245,6 +245,8 @@ footer {
 
 
 .project-list .title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   color: var(--secondary-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -253,6 +255,8 @@ footer {
   }
 
 .project-list p {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
