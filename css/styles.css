@@ -12,6 +12,13 @@ body {
   letter-spacing: 0.03em;
   
 }
+
+* {
+  outline: 1px solid tomato;
+}
+img {
+  display: block;
+}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -31,6 +38,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  
   
 }
 
@@ -91,6 +99,8 @@ span {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 30px;
   
 }
 
@@ -106,6 +116,8 @@ span {
   align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin: 0 auto;
+  
 }
 
 .button {
@@ -130,6 +142,8 @@ span {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .list .title {
@@ -138,12 +152,16 @@ span {
   font-size: 14px;
   line-height: 1.63;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
   }
 
 .list p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.63;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Наша команда */
 
@@ -158,6 +176,8 @@ span {
 
 footer .logo {
   color: #FFFFFF;
+  display: block;
+  margin-bottom: 20px;
 }
 footer {
   background: #2F303A;
@@ -168,6 +188,8 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 9px;
   }
 
   .address a {
@@ -178,6 +200,10 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+    display: block;
+    }
+    .address a:not(:last-child) {
+      margin-bottom: 9px;
     }
 
   .address a:focus,
