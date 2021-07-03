@@ -3,6 +3,8 @@
   --main-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196F3;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
 
 body {
@@ -20,11 +22,12 @@ body {
   padding: 0;
 }
 
-* {
-  outline: 1px solid tomato;
+/* * {
+  outline: 1px solid tomato; */
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -164,6 +167,17 @@ span {
 
 /* Особенности */
 
+.features-section {
+  padding-bottom: 94px;
+}
+.features .list {
+  display: flex;
+}
+
+.list .item + .item {
+  margin-left: 30px;
+}
+
 .section-title {
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -175,13 +189,18 @@ span {
 }
 
 .list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.63;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
+  text-align: center;
+  
+  }
+  .features-list {
+    text-align: left;
   }
 
 .list p {
@@ -190,14 +209,49 @@ span {
   line-height: 1.63;
   margin-top: 0;
   margin-bottom: 0;
+  
 }
+/* Чем мы занимаемся */
+.team-list p{
+  text-align: center;
+}
+
+.work {
+  padding-bottom: 94px;
+  /* background: teal; */
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list .item + .item {
+  margin-left: 30px;
+}
+
 /* Наша команда */
 
-.team {
+.team-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-section {
   background: #F5F4FA;
 }
-.team-list li {
+.team-list .item {
+  border-radius: 3px;
   background: var(--common-bg-color);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
 }
 
 /* Подвал */
