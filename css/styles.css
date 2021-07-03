@@ -3,6 +3,9 @@
   --main-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196F3;
+  --border-bottom-colour: #ECECEC;
+  --border-project-colour: #EEEEEE;
+  --card-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
@@ -15,6 +18,13 @@ body {
   
 }
 
+header {
+  border-bottom: 1px solid var(--border-bottom-colour);
+}
+main {
+  border-top: 1px solid var(--border-bottom-colour);
+}
+
 /* Утилиты */
 .list, .project-list {
   list-style: none;
@@ -23,8 +33,9 @@ body {
 }
 
 /* * {
-  outline: 1px solid tomato; */
-}
+  outline: 1px solid tomato;
+} */
+
 img {
   display: block;
   max-width: 100%;
@@ -41,8 +52,8 @@ img {
 }
 
 /* Логотип */
+
 .logo {
-  display: flex;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -257,11 +268,14 @@ span {
 /* Подвал */
 
 footer .logo {
-  color: #FFFFFF;
   display: block;
   margin-bottom: 20px;
+  color: #FFFFFF;
+  
+  
 }
 footer {
+  padding-top: 30px;
   background: #2F303A;
 }
 
@@ -297,6 +311,38 @@ footer {
 
 /* Портфолио */
 
+/* Фильтры */
+.filter-section {
+  padding-bottom: 50px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter .item + .item {
+  margin-left: 8px;
+}
+
+
+/* Проэкты */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -20px;
+  padding-bottom: 94px;
+}
+
+.project-list > li {
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  border: 1px solid var(--border-project-colour);
+  box-shadow: var(--card-shadow);
+}
 
 .project-list .title {
   margin-top: 20px;
