@@ -69,6 +69,10 @@ span {
 }
 
 /* Навигация */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -134,31 +138,49 @@ span {
 }
 
 /* Герой */
+.hero {
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background:#2F303A;
+}
 .hero-title {
-  color: var(--secondary-text-color);
+  margin: 0 237px;
+
+  
+  
+  color: var(--common-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-top: 0;
-  margin-bottom: 30px;
+  text-transform: uppercase;
   
 }
 
 /* Кнопки */
 .hero .button {
-  color: var(--common-bg-color);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  border: none;
+  border-radius: 4px;
+  
+
+  color: #FFFFFF;
   background: var(--accent-color);
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 2;
-  display: flex;
   align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  margin: 0 auto;
+  
   
 }
 
@@ -207,7 +229,7 @@ span {
   font-size: 14px;
   line-height: 1.63;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
   
   }
   .features-list {
@@ -249,6 +271,10 @@ span {
 
 .team-list {
   display: flex;
+}
+
+.team-list .title {
+  text-align: center;
 }
 
 .team-section {
