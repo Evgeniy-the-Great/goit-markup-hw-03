@@ -378,12 +378,12 @@ footer {
   margin-top: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   border: 1px solid var(--border-project-colour);
-  box-shadow: var(--card-shadow);
+  
 }
 
 .project-list > li:hover {
-  background: var(--accent-color);
-  
+  box-shadow: var(--card-shadow);
+    
 }
 
 .project-list .title {
