@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-
     <!-- Шапка -->
 
     <header>
@@ -58,30 +57,41 @@
     <!-- Тело -->
 
     <main>
-      <section class="container filter-section">
-        <h1>Портфолио</h1>
+      <section class="filter-section">
+        <div class="container">
+          <h1 hidden>Портфолио</h1>
 
-        <!-- Фильтры -->
+          <!-- Фильтры -->
 
-        <ul class="filter list">
+          <ul class="filter list">
 
-          <!-- Кнопки -->
-          <li class="item"><button type="button" class="button">Веб-сайты</button></li>
-          <li class="item"><button type="button" class="button">Все</button></li>
-          <li class="item"><button type="button" class="button">Приложения</button></li>
-          <li class="item"><button type="button" class="button">Дизайн</button></li>
-          <li class="item"><button type="button" class="button">Маркетинг</button></li>
+            <!-- Кнопки -->
 
-        </ul>
+            <li class="item">
+              <button type="button" class="button">Все</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Приложения</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Проэкты -->
+
       <section>
-
         <div class="container">
-          <h2 class="section-title">Projects</h2>
+          <h2 class="section-title" hidden>Projects</h2>
           <ul class="project-list">
-
             <li>
               <img
                 src="./images/homework2/project1.jpg"
@@ -171,7 +181,6 @@
               <h3 class="title">Growing Business</h3>
               <p>Приложение</p>
             </li>
-
           </ul>
         </div>
       </section>

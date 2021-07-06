@@ -196,6 +196,7 @@ span {
 .button:hover {
   background: var(--accent-color);
   color: var(--common-bg-color);
+  box-shadow: var(--card-shadow);
 }
 
 /* Особенности */
@@ -348,7 +349,9 @@ footer {
 
 /* Фильтры */
 .filter-section {
+  padding-top: 94px;
   padding-bottom: 50px;
+
 }
 
 .filter {
@@ -380,8 +383,9 @@ footer {
 }
 
 .project-list .title {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 20px 24px 4px 24px;
+  
+
   color: var(--secondary-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -390,9 +394,16 @@ footer {
   }
 
 .project-list p {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 24px 20px 24px;
+  
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+}
+
+.item .button {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  
 }
